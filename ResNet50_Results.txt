@@ -1,0 +1,166 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS C:\Users\Vania\OneDrive\Desktop> python ResNet50.py
+2025-02-22 21:40:53.356953: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized touse available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE SSE2 SSE3 SSE4.1 SSE4.2 AVX AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #
+=================================================================
+ resnet50 (Functional)       (None, 7, 7, 2048)        23587712
+
+ global_average_pooling2d (  (None, 2048)              0
+ GlobalAveragePooling2D)
+
+ dropout (Dropout)           (None, 2048)              0
+
+ dense (Dense)               (None, 120)               245880
+
+=================================================================
+Total params: 23833592 (90.92 MB)
+Trainable params: 245880 (960.47 KB)
+Non-trainable params: 23587712 (89.98 MB)
+_________________________________________________________________
+Epoch 1/20
+
+Epoch 1: val_loss improved from inf to 4.78331, saving model to ResNet50model.h5
+C:\Users\Vania\AppData\Local\Programs\Python\Python311\Lib\site-packages\keras\src\engine\training.py:3000: UserWarning: You are saving your model as an HDF5 file via `model.save()`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')`.
+  saving_api.save_model(
+451/451 - 386s - loss: 4.9291 - accuracy: 0.0104 - val_loss: 4.7833 - val_accuracy: 0.0075 - lr: 1.0000e-04 - 386s/epoch - 857ms/step
+Epoch 2/20
+
+Epoch 2: val_loss improved from 4.78331 to 4.77398, saving model to ResNet50model.h5
+451/451 - 394s - loss: 4.8708 - accuracy: 0.0089 - val_loss: 4.7740 - val_accuracy: 0.0100 - lr: 1.0000e-04 - 394s/epoch - 874ms/step
+Epoch 3/20
+
+Epoch 3: val_loss improved from 4.77398 to 4.76318, saving model to ResNet50model.h5
+451/451 - 398s - loss: 4.8553 - accuracy: 0.0101 - val_loss: 4.7632 - val_accuracy: 0.0178 - lr: 1.0000e-04 - 398s/epoch - 883ms/step
+Epoch 4/20
+
+Epoch 4: val_loss improved from 4.76318 to 4.76183, saving model to ResNet50model.h5
+451/451 - 418s - loss: 4.8444 - accuracy: 0.0103 - val_loss: 4.7618 - val_accuracy: 0.0130 - lr: 1.0000e-04 - 418s/epoch - 926ms/step
+Epoch 5/20
+
+Epoch 5: val_loss improved from 4.76183 to 4.75262, saving model to ResNet50model.h5
+451/451 - 446s - loss: 4.8294 - accuracy: 0.0121 - val_loss: 4.7526 - val_accuracy: 0.0191 - lr: 1.0000e-04 - 446s/epoch - 990ms/step
+Epoch 6/20
+
+Epoch 6: val_loss improved from 4.75262 to 4.74941, saving model to ResNet50model.h5
+451/451 - 432s - loss: 4.8257 - accuracy: 0.0127 - val_loss: 4.7494 - val_accuracy: 0.0198 - lr: 1.0000e-04 - 432s/epoch - 958ms/step
+Epoch 7/20
+
+Epoch 7: val_loss improved from 4.74941 to 4.74126, saving model to ResNet50model.h5
+451/451 - 517s - loss: 4.8120 - accuracy: 0.0139 - val_loss: 4.7413 - val_accuracy: 0.0198 - lr: 1.0000e-04 - 517s/epoch - 1s/step
+Epoch 8/20
+
+Epoch 8: val_loss improved from 4.74126 to 4.73794, saving model to ResNet50model.h5
+451/451 - 481s - loss: 4.8021 - accuracy: 0.0123 - val_loss: 4.7379 - val_accuracy: 0.0233 - lr: 1.0000e-04 - 481s/epoch - 1s/step
+Epoch 9/20
+
+Epoch 9: val_loss improved from 4.73794 to 4.73539, saving model to ResNet50model.h5
+451/451 - 505s - loss: 4.7904 - accuracy: 0.0138 - val_loss: 4.7354 - val_accuracy: 0.0204 - lr: 1.0000e-04 - 505s/epoch - 1s/step
+Epoch 10/20
+
+Epoch 10: val_loss improved from 4.73539 to 4.72994, saving model to ResNet50model.h5
+451/451 - 463s - loss: 4.7900 - accuracy: 0.0125 - val_loss: 4.7299 - val_accuracy: 0.0204 - lr: 1.0000e-04 - 463s/epoch - 1s/step
+Epoch 11/20
+
+Epoch 11: val_loss improved from 4.72994 to 4.72069, saving model to ResNet50model.h5
+451/451 - 497s - loss: 4.7796 - accuracy: 0.0151 - val_loss: 4.7207 - val_accuracy: 0.0227 - lr: 1.0000e-04 - 497s/epoch - 1s/step
+Epoch 12/20
+
+Epoch 12: val_loss did not improve from 4.72069
+451/451 - 458s - loss: 4.7770 - accuracy: 0.0143 - val_loss: 4.7232 - val_accuracy: 0.0224 - lr: 1.0000e-04 - 458s/epoch - 1s/step
+Epoch 13/20
+
+Epoch 13: val_loss improved from 4.72069 to 4.71510, saving model to ResNet50model.h5
+451/451 - 507s - loss: 4.7680 - accuracy: 0.0156 - val_loss: 4.7151 - val_accuracy: 0.0217 - lr: 1.0000e-04 - 507s/epoch - 1s/step
+Epoch 14/20
+
+Epoch 14: val_loss improved from 4.71510 to 4.71373, saving model to ResNet50model.h5
+451/451 - 435s - loss: 4.7644 - accuracy: 0.0178 - val_loss: 4.7137 - val_accuracy: 0.0285 - lr: 1.0000e-04 - 435s/epoch - 964ms/step
+Epoch 15/20
+
+Epoch 15: val_loss improved from 4.71373 to 4.70707, saving model to ResNet50model.h5
+451/451 - 539s - loss: 4.7569 - accuracy: 0.0163 - val_loss: 4.7071 - val_accuracy: 0.0230 - lr: 1.0000e-04 - 539s/epoch - 1s/step
+Epoch 16/20
+
+Epoch 16: val_loss did not improve from 4.70707
+451/451 - 518s - loss: 4.7523 - accuracy: 0.0155 - val_loss: 4.7107 - val_accuracy: 0.0175 - lr: 1.0000e-04 - 518s/epoch - 1s/step
+Epoch 17/20
+
+Epoch 17: val_loss improved from 4.70707 to 4.70635, saving model to ResNet50model.h5
+451/451 - 405s - loss: 4.7479 - accuracy: 0.0158 - val_loss: 4.7063 - val_accuracy: 0.0240 - lr: 1.0000e-04 - 405s/epoch - 898ms/step
+Epoch 18/20
+
+Epoch 18: val_loss improved from 4.70635 to 4.70214, saving model to ResNet50model.h5
+451/451 - 413s - loss: 4.7442 - accuracy: 0.0153 - val_loss: 4.7021 - val_accuracy: 0.0256 - lr: 1.0000e-04 - 413s/epoch - 916ms/step
+Epoch 19/20
+
+Epoch 19: val_loss improved from 4.70214 to 4.70009, saving model to ResNet50model.h5
+451/451 - 422s - loss: 4.7406 - accuracy: 0.0151 - val_loss: 4.7001 - val_accuracy: 0.0285 - lr: 1.0000e-04 - 422s/epoch - 936ms/step
+Epoch 20/20
+
+Epoch 20: val_loss did not improve from 4.70009
+451/451 - 443s - loss: 4.7379 - accuracy: 0.0162 - val_loss: 4.7015 - val_accuracy: 0.0240 - lr: 1.0000e-04 - 443s/epoch - 981ms/step
+Epoch 1/10
+
+Epoch 1: val_loss did not improve from 4.70009
+451/451 - 1821s - loss: 6.2103 - accuracy: 0.0303 - val_loss: 12.4343 - val_accuracy: 0.0055 - lr: 1.0000e-05 - 1821s/epoch - 4s/step
+Epoch 2/10
+
+Epoch 2: val_loss improved from 4.70009 to 3.57618, saving model to ResNet50model.h5
+451/451 - 1675s - loss: 3.7539 - accuracy: 0.1467 - val_loss: 3.5762 - val_accuracy: 0.1979 - lr: 1.0000e-05 - 1675s/epoch - 4s/step
+Epoch 3/10
+
+Epoch 3: val_loss improved from 3.57618 to 2.04730, saving model to ResNet50model.h5
+451/451 - 1705s - loss: 2.7672 - accuracy: 0.3287 - val_loss: 2.0473 - val_accuracy: 0.4642 - lr: 1.0000e-05 - 1705s/epoch - 4s/step
+Epoch 4/10
+
+Epoch 4: val_loss improved from 2.04730 to 1.61698, saving model to ResNet50model.h5
+451/451 - 1632s - loss: 2.1022 - accuracy: 0.4617 - val_loss: 1.6170 - val_accuracy: 0.5611 - lr: 1.0000e-05 - 1632s/epoch - 4s/step
+Epoch 5/10
+
+Epoch 5: val_loss improved from 1.61698 to 1.35285, saving model to ResNet50model.h5
+451/451 - 1520s - loss: 1.6867 - accuracy: 0.5480 - val_loss: 1.3529 - val_accuracy: 0.6197 - lr: 1.0000e-05 - 1520s/epoch - 3s/step
+Epoch 6/10
+
+Epoch 6: val_loss improved from 1.35285 to 1.22793, saving model to ResNet50model.h5
+451/451 - 1445s - loss: 1.4370 - accuracy: 0.6103 - val_loss: 1.2279 - val_accuracy: 0.6508 - lr: 1.0000e-05 - 1445s/epoch - 3s/step
+Epoch 7/10
+
+Epoch 7: val_loss improved from 1.22793 to 1.13124, saving model to ResNet50model.h5
+451/451 - 1439s - loss: 1.2684 - accuracy: 0.6382 - val_loss: 1.1312 - val_accuracy: 0.6657 - lr: 1.0000e-05 - 1439s/epoch - 3s/step
+Epoch 8/10
+
+Epoch 8: val_loss improved from 1.13124 to 1.05870, saving model to ResNet50model.h5
+451/451 - 1443s - loss: 1.1270 - accuracy: 0.6826 - val_loss: 1.0587 - val_accuracy: 0.6880 - lr: 1.0000e-05 - 1443s/epoch - 3s/step
+Epoch 9/10
+
+Epoch 9: val_loss improved from 1.05870 to 1.03319, saving model to ResNet50model.h5
+451/451 - 1439s - loss: 1.0089 - accuracy: 0.7141 - val_loss: 1.0332 - val_accuracy: 0.6991 - lr: 1.0000e-05 - 1439s/epoch - 3s/step
+Epoch 10/10
+
+Epoch 10: val_loss improved from 1.03319 to 0.97501, saving model to ResNet50model.h5
+451/451 - 1443s - loss: 0.9253 - accuracy: 0.7348 - val_loss: 0.9750 - val_accuracy: 0.7114 - lr: 1.0000e-05 - 1443s/epoch - 3s/step
+97/97 [==============================] - 69s 700ms/step
+
+Classification Metrics:
+Accuracy: 0.7211
+Precision: 0.7316
+Recall: 0.7211
+F1-score: 0.7186
+
+Top Misclassified Breeds:
+Pomeranian misclassified as Irish Wolfhound: 21 times
+Japanese Spaniel misclassified as Maltese Dog: 19 times
+Leonberg misclassified as Afghan Hound: 15 times
+Great Pyrenees misclassified as Afghan Hound: 14 times
+Tibetan Terrier misclassified as Maltese Dog: 26 times
+
+Most Confusing Pair of Dog Breeds:
+Tibetan Terrier misclassified as Maltese Dog (26 times)
+PS C:\Users\Vania\OneDrive\Desktop>
