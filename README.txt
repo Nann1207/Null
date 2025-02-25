@@ -4,13 +4,15 @@ README.txt
 Files included:
 - Test.py
 - Labels.py
-- Images (folder)
 - ResNet50.py
-- NewVGG16.py
+- VGG16.py
 - InceptionV3.py
 - ResNet50_Results.txt
 - VGG16_Results.txt
 - InceptionV3_Results.txt
+
+Please download the dataset file from this link: 
+http://vision.stanford.edu/aditya86/ImageNetDogs/images.tar
 
 
 Steps for opening and running the files:
@@ -18,7 +20,7 @@ Steps for opening and running the files:
 	1.) Create a new folder and move all Python files into it 
 		(Test.py, Labels.py, ResNet50.py, NewVGG16.py, InceptionV3.py).
 
-	2.) Move the Images folder into the same folder you created in step 1.
+	2.) Move the Images and unzip into the same folder you created in step 1.
 
 	3.) Open each Python file (except Test.py and Labels.py) and amend the DATA_DIR variable to point to the path of the Images folder.
 		For example: DATA_DIR = 'C:\Desktop\Folder\Images'
